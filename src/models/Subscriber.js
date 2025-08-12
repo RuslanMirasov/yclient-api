@@ -24,8 +24,6 @@ const SubscriberSchema = new Schema(
       unique: true, // один подписчик на номер
       index: true,
     },
-    source: { type: String, default: "manual" },
-    meta: { type: Schema.Types.Mixed, default: {} },
   },
   { timestamps: true, versionKey: false }
 );
